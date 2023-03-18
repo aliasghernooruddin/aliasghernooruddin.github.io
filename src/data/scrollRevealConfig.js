@@ -11,7 +11,7 @@ export const targetElements = [
     element: ".section-title",
     animation: {
       delay: 300,
-      distance: "0px",
+      distance: "0px", 
       origin: "bottom",
     },
   },
