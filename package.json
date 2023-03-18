@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobiwave/simplefolio"
+    "url": "git@github.com:aliasghernooruddin/aliasghernooruddin.github.io.git"
   },
   "keywords": [],
   "author": "Jacobo Martinez",
@@ -19,7 +19,6 @@
     "url": "https://github.com/cobiwave/simplefolio/issues"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.8.3",
     "parcel": "^2.8.2",
     "prettier": "^2.8.1"
   },
