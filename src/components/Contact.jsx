@@ -44,7 +44,7 @@ export default function Contact() {
   return (
     <section id="contact" className="scroll-mt-24 px-6 py-20 lg:py-28">
       <div className="mx-auto max-w-6xl">
-        <div className="overflow-hidden rounded-3xl border border-border bg-gradient-to-br from-surface-raised to-surface-muted/80 p-8 sm:p-12 lg:p-16">
+        <div className="overflow-hidden rounded-3xl border border-border bg-surface-raised p-8 shadow-lg shadow-slate-200/60 sm:p-12 lg:p-16">
           <SectionHeading
             label="Contact"
             title="Let's build something useful"
@@ -58,12 +58,10 @@ export default function Contact() {
                 href={item.href}
                 target={item.external ? "_blank" : undefined}
                 rel={item.external ? "noopener noreferrer" : undefined}
-                className="group rounded-2xl border border-border/80 bg-surface/50 p-6 transition hover:border-accent/40 hover:bg-surface"
+                className="group rounded-2xl border border-border bg-surface p-5 transition hover:border-accent/40 hover:shadow-md"
               >
-                <p className="text-sm font-semibold text-accent">
-                  {item.name}
-                </p>
-                <p className="mt-2 text-text-muted transition group-hover:text-text">
+                <p className="text-sm font-semibold text-accent">{item.name}</p>
+                <p className="mt-2 text-sm text-ink-muted transition group-hover:text-ink">
                   {item.description}
                 </p>
               </a>
@@ -72,7 +70,7 @@ export default function Contact() {
 
           <a
             href={site.links.email}
-            className="mt-10 inline-flex items-center justify-center rounded-full bg-accent px-8 py-4 text-base font-semibold text-surface shadow-lg shadow-accent/20 transition hover:bg-accent/90"
+            className="mt-10 inline-flex items-center justify-center rounded-full bg-accent px-8 py-4 text-base font-semibold text-white shadow-lg shadow-teal-600/25 transition hover:bg-accent-hover"
           >
             Send an email
           </a>

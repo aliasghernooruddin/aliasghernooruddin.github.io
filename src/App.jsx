@@ -9,14 +9,14 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="min-h-screen overflow-x-hidden">
+    <div className="min-h-screen overflow-x-hidden bg-surface">
       <div
         className="pointer-events-none fixed inset-0 -z-10"
         aria-hidden="true"
       >
-        <div className="absolute -left-32 top-0 h-[28rem] w-[28rem] rounded-full bg-accent/10 blur-3xl" />
-        <div className="absolute -right-24 top-1/3 h-80 w-80 rounded-full bg-accent-dim/10 blur-3xl" />
-        <div className="absolute bottom-0 left-1/2 h-64 w-96 -translate-x-1/2 rounded-full bg-accent/5 blur-3xl" />
+        <div className="absolute -left-20 top-0 h-[32rem] w-[32rem] rounded-full bg-sky-soft/70 blur-3xl" />
+        <div className="absolute -right-16 top-1/4 h-72 w-72 rounded-full bg-accent-soft/50 blur-3xl" />
+        <div className="absolute bottom-0 left-1/2 h-80 w-[36rem] -translate-x-1/2 rounded-full bg-violet-soft/40 blur-3xl" />
       </div>
 
       <Header />

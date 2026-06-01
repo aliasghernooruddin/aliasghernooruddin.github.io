@@ -9,7 +9,7 @@ const groups = [
 
 export default function Stack() {
   return (
-    <section className="border-t border-border/60 bg-surface-raised/30 px-6 py-20 lg:py-28">
+    <section className="border-t border-border bg-surface-muted/50 px-6 py-20 lg:py-28">
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           label="Toolkit"
@@ -21,16 +21,16 @@ export default function Stack() {
           {groups.map((group) => (
             <div
               key={group.key}
-              className="rounded-2xl border border-border bg-surface-raised/50 p-6"
+              className="rounded-2xl border border-border bg-surface-raised p-6 shadow-sm"
             >
-              <h3 className="text-sm font-semibold tracking-wide text-text uppercase">
+              <h3 className="text-sm font-semibold tracking-wide text-ink uppercase">
                 {group.title}
               </h3>
               <ul className="mt-4 space-y-2.5">
                 {group.items.map((item) => (
                   <li
                     key={item}
-                    className="text-text-muted before:mr-2 before:text-accent before:content-['·']"
+                    className="text-ink-muted before:mr-2 before:font-bold before:text-accent before:content-['·']"
                   >
                     {item}
                   </li>

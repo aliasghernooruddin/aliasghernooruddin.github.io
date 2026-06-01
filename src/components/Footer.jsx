@@ -10,9 +10,11 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border/60 px-6 py-10">
-      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 text-sm text-text-muted sm:flex-row">
-        <p>© {year} {site.shortName}. All rights reserved.</p>
+    <footer className="border-t border-border bg-surface-raised px-6 py-10">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 text-sm text-ink-muted sm:flex-row">
+        <p>
+          © {year} {site.shortName}. All rights reserved.
+        </p>
         <nav className="flex flex-wrap justify-center gap-6" aria-label="Footer">
           {footerLinks.map((link) => (
             <a
@@ -22,7 +24,7 @@ export default function Footer() {
               rel={
                 link.label === "Email" ? undefined : "noopener noreferrer"
               }
-              className="transition hover:text-accent"
+              className="font-medium transition hover:text-accent"
             >
               {link.label}
             </a>

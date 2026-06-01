@@ -3,15 +3,18 @@
 @theme {
   --font-sans: "DM Sans", system-ui, sans-serif;
   --font-display: "Instrument Serif", Georgia, serif;
-  --color-surface: #0a0f14;
-  --color-surface-raised: #111820;
-  --color-surface-muted: #1a232e;
-  --color-border: #243040;
-  --color-text: #e8edf4;
-  --color-text-muted: #8b9cb3;
-  --color-accent: #3dd6c3;
-  --color-accent-dim: #2a9d8f;
-  --color-accent-glow: color-mix(in srgb, var(--color-accent) 25%, transparent);
+  --color-surface: #f8fafc;
+  --color-surface-raised: #ffffff;
+  --color-surface-muted: #f1f5f9;
+  --color-border: #e2e8f0;
+  --color-ink: #0f172a;
+  --color-ink-muted: #64748b;
+  --color-accent: #0d9488;
+  --color-accent-hover: #0f766e;
+  --color-accent-soft: #ccfbf1;
+  --color-accent-muted: #5eead4;
+  --color-sky-soft: #e0f2fe;
+  --color-violet-soft: #ede9fe;
 }
 
 html {
@@ -21,11 +24,11 @@ html {
 body {
   font-family: var(--font-sans);
   background-color: var(--color-surface);
-  color: var(--color-text);
+  color: var(--color-ink);
   -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
-  background: var(--color-accent);
-  color: var(--color-surface);
+  background: var(--color-accent-soft);
+  color: var(--color-accent-hover);
 }

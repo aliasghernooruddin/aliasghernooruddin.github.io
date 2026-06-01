@@ -62,6 +62,7 @@ export const approach = [
 export const products = [
   {
     name: "QuotelyPro",
+    url: "https://quotelypro.com",
     tagline: "Quotation & invoicing for modern businesses",
     role: "Founder · Product Builder · Full-stack",
     description:
@@ -72,14 +73,19 @@ export const products = [
       "WhatsApp document delivery",
       "PDF sharing",
     ],
-    link: {
-      label: "Google Play",
-      href: "https://play.google.com/store/apps/details?id=com.quotation.maker",
-    },
-    accent: "from-teal-500/20 to-cyan-500/5",
+    links: [
+      { label: "quotelypro.com", href: "https://quotelypro.com" },
+      {
+        label: "Google Play",
+        href: "https://play.google.com/store/apps/details?id=com.quotation.maker",
+      },
+    ],
+    accent: "border-teal-200 bg-gradient-to-br from-teal-50/80 to-white",
+    iconBg: "bg-teal-100 text-teal-700",
   },
   {
     name: "Invitease",
+    url: "https://invitease.co",
     tagline: "Event invitations & business messaging",
     role: "Backend · WhatsApp · Cloud infrastructure",
     description:
@@ -90,7 +96,9 @@ export const products = [
       "Backend infrastructure",
       "Cloud deployment",
     ],
-    accent: "from-violet-500/20 to-indigo-500/5",
+    links: [{ label: "invitease.co", href: "https://invitease.co" }],
+    accent: "border-violet-200 bg-gradient-to-br from-violet-50/80 to-white",
+    iconBg: "bg-violet-100 text-violet-700",
   },
 ];
 

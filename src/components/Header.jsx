@@ -23,14 +23,14 @@ export default function Header() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "border-b border-border/60 bg-surface/85 backdrop-blur-xl"
-          : "bg-transparent"
+          ? "border-b border-border bg-surface-raised/90 shadow-sm shadow-slate-200/50 backdrop-blur-xl"
+          : "bg-surface-raised/60 backdrop-blur-md"
       }`}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 lg:h-[4.5rem]">
         <a
           href="#"
-          className="font-display text-xl text-text transition-colors hover:text-accent"
+          className="font-display text-xl text-ink transition-colors hover:text-accent"
         >
           {site.shortName}
         </a>
@@ -40,14 +40,14 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-text-muted transition-colors hover:text-text"
+              className="text-sm font-medium text-ink-muted transition-colors hover:text-ink"
             >
               {link.label}
             </a>
           ))}
           <a
             href={site.links.email}
-            className="rounded-full bg-accent px-5 py-2 text-sm font-semibold text-surface transition hover:bg-accent/90"
+            className="rounded-full bg-accent px-5 py-2 text-sm font-semibold text-white shadow-md shadow-teal-600/20 transition hover:bg-accent-hover"
           >
             Get in touch
           </a>
@@ -55,7 +55,7 @@ export default function Header() {
 
         <button
           type="button"
-          className="relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-lg border border-border text-text md:hidden"
+          className="relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-lg border border-border bg-surface-raised text-ink md:hidden"
           aria-expanded={menuOpen}
           aria-label={menuOpen ? "Close menu" : "Open menu"}
           onClick={() => setMenuOpen((open) => !open)}
@@ -79,7 +79,7 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div className="fixed inset-0 z-40 bg-surface/95 backdrop-blur-xl md:hidden">
+        <div className="fixed inset-0 z-40 bg-surface-raised/98 backdrop-blur-xl md:hidden">
           <nav
             className="flex h-full flex-col items-center justify-center gap-8"
             aria-label="Mobile"
@@ -88,7 +88,7 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-2xl text-text"
+                className="text-2xl font-medium text-ink"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}
@@ -96,7 +96,7 @@ export default function Header() {
             ))}
             <a
               href={site.links.email}
-              className="mt-4 rounded-full bg-accent px-8 py-3 text-lg font-semibold text-surface"
+              className="mt-4 rounded-full bg-accent px-8 py-3 text-lg font-semibold text-white"
               onClick={() => setMenuOpen(false)}
             >
               Get in touch
