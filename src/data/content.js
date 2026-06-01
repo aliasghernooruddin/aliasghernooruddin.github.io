@@ -1,6 +1,6 @@
 export const site = {
-  name: "Ali Asgher Nooruddin",
-  shortName: "Ali Asgher",
+  name: "Aliasgher Nooruddin",
+  shortName: "Aliasgher",
   title: "Software Engineer & Product Builder",
   headline:
     "Building AI-powered products, SaaS platforms, and automation solutions that help businesses grow.",

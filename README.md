@@ -1,4 +1,4 @@
-# Ali Asgher Nooruddin — Personal Website
+# Aliasgher Nooruddin — Personal Website
 
 Personal portfolio site for [aliasghernooruddin.github.io](https://aliasghernooruddin.github.io).
 

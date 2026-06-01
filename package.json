@@ -3,7 +3,7 @@
   "private": true,
   "version": "2.0.0",
   "type": "module",
-  "description": "Personal website of Ali Asgher Nooruddin — software engineer and product builder",
+  "description": "Personal website of Aliasgher Nooruddin — software engineer and product builder",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git@github.com:aliasghernooruddin/aliasghernooruddin.github.io.git"
   },
-  "author": "Ali Asgher Nooruddin",
+  "author": "Aliasgher Nooruddin",
   "license": "MIT",
   "dependencies": {
     "react": "^19.1.0",
