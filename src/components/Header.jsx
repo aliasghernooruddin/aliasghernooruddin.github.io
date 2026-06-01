@@ -98,7 +98,7 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div className="fixed inset-0 z-40 bg-surface/97 backdrop-blur-xl md:hidden">
+        <div className="fixed inset-0 z-40 bg-surface md:hidden">
           <nav
             className="flex h-full flex-col items-center justify-center gap-2"
             aria-label="Mobile"
