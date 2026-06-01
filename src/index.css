@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-display: "Instrument Serif", Georgia, serif;
+  --color-surface: #0a0f14;
+  --color-surface-raised: #111820;
+  --color-surface-muted: #1a232e;
+  --color-border: #243040;
+  --color-text: #e8edf4;
+  --color-text-muted: #8b9cb3;
+  --color-accent: #3dd6c3;
+  --color-accent-dim: #2a9d8f;
+  --color-accent-glow: color-mix(in srgb, var(--color-accent) 25%, transparent);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-surface);
+}

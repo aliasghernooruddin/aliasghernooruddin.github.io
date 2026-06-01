@@ -1,18 +1,27 @@
-# portfolio
+# Ali Asgher Nooruddin — Personal Website
 
-> A Vue.js project
+Personal portfolio site for [aliasghernooruddin.github.io](https://aliasghernooruddin.github.io).
 
-## Build Setup
+Built with **React**, **Vite**, and **Tailwind CSS**.
 
-``` bash
-# install dependencies
+## Development
+
+```bash
 npm install
-
-# serve with hot reload at localhost:8080
 npm run dev
-
-# build for production with minification
-npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Open [http://localhost:5173](http://localhost:5173).
+
+## Production build
+
+```bash
+npm run build
+npm run preview
+```
+
+The `dist/` folder is deployed to GitHub Pages via the workflow in `.github/workflows/gh-pages.yml`.
+
+## Content
+
+Site copy and structure live in `src/data/content.js` for easy updates.
