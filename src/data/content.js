@@ -73,6 +73,7 @@ export const products = [
       "WhatsApp document delivery",
       "PDF sharing",
     ],
+    year: "2025",
     links: [
       { label: "quotelypro.com", href: "https://quotelypro.com" },
       {
@@ -80,8 +81,8 @@ export const products = [
         href: "https://play.google.com/store/apps/details?id=com.quotation.maker",
       },
     ],
-    accent: "border-teal-200 bg-gradient-to-br from-teal-50/80 to-white",
-    iconBg: "bg-teal-100 text-teal-700",
+    accent: "text-accent",
+    iconBg: "bg-accent-soft text-accent",
   },
   {
     name: "Invitease",
@@ -96,9 +97,10 @@ export const products = [
       "Backend infrastructure",
       "Cloud deployment",
     ],
+    year: "2026",
     links: [{ label: "invitease.co", href: "https://invitease.co" }],
-    accent: "border-violet-200 bg-gradient-to-br from-violet-50/80 to-white",
-    iconBg: "bg-violet-100 text-violet-700",
+    accent: "text-clay",
+    iconBg: "bg-clay-soft text-clay",
   },
 ];
 
