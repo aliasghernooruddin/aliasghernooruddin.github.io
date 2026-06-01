@@ -21,13 +21,16 @@ export default function Products() {
                 className={`absolute inset-x-0 top-0 h-32 bg-gradient-to-b ${product.accent}`}
               />
               <div className="relative flex flex-1 flex-col p-8">
-                <div className="mb-6 flex items-start justify-between gap-4">
-                  <div>
-                    <h3 className="font-display text-3xl text-text">
-                      {product.name}
-                    </h3>
-                    <p className="mt-1 text-sm text-accent">{product.role}</p>
-                  </div>
+                <div className="mb-6">
+                  {product.tagline && (
+                    <p className="text-xs font-semibold uppercase tracking-widest text-accent">
+                      {product.tagline}
+                    </p>
+                  )}
+                  <h3 className="mt-2 font-display text-3xl text-text">
+                    {product.name}
+                  </h3>
+                  <p className="mt-1 text-sm text-text-muted">{product.role}</p>
                 </div>
 
                 <p className="flex-1 leading-relaxed text-text-muted">

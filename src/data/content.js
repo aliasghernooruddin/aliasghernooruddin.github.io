@@ -7,10 +7,15 @@ export const site = {
   subheadline:
     "Senior software engineer with ~7 years of experience across the full product lifecycle — from architecture and development to deployment and growth.",
   email: "aliasghernooruddin@gmail.com",
+  phone: "+923032614853",
   links: {
     github: "https://github.com/aliasghernooruddin",
     linkedin: "https://www.linkedin.com/in/aliasgher-nooruddin/",
+    twitter: "https://twitter.com/aliasghernoor",
+    stackoverflow:
+      "https://stackoverflow.com/users/10066638/aliasgher-nooruddin",
     email: "mailto:aliasghernooruddin@gmail.com",
+    phone: "tel:+923032614853",
   },
 };
 
@@ -47,9 +52,17 @@ export const expertise = [
   },
 ];
 
+export const approach = [
+  "Build practical, revenue-generating products",
+  "Focus on execution over hype",
+  "Solve technical and business problems together",
+  "Engineer for scale and operational efficiency",
+];
+
 export const products = [
   {
     name: "QuotelyPro",
+    tagline: "Quotation & invoicing for modern businesses",
     role: "Founder · Product Builder · Full-stack",
     description:
       "A modern quotation and invoicing platform for freelancers, agencies, and small businesses. Generate professional quotes and invoices, manage clients, track payments, and share documents instantly via WhatsApp, email, or PDF.",
@@ -67,6 +80,7 @@ export const products = [
   },
   {
     name: "Invitease",
+    tagline: "Event invitations & business messaging",
     role: "Backend · WhatsApp · Cloud infrastructure",
     description:
       "Event invitation and business messaging product with WhatsApp integration, Cloud API implementation, and scalable backend infrastructure for high-volume messaging workflows.",

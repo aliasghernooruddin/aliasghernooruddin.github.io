@@ -6,16 +6,37 @@ const social = [
     name: "Email",
     href: site.links.email,
     description: site.email,
+    external: false,
+  },
+  {
+    name: "Phone",
+    href: site.links.phone,
+    description: site.phone,
+    external: false,
   },
   {
     name: "LinkedIn",
     href: site.links.linkedin,
     description: "Connect professionally",
+    external: true,
   },
   {
     name: "GitHub",
     href: site.links.github,
     description: "View code & projects",
+    external: true,
+  },
+  {
+    name: "Twitter / X",
+    href: site.links.twitter,
+    description: "@aliasghernoor",
+    external: true,
+  },
+  {
+    name: "Stack Overflow",
+    href: site.links.stackoverflow,
+    description: "Answers & contributions",
+    external: true,
   },
 ];
 
@@ -30,15 +51,13 @@ export default function Contact() {
             description="Open to senior engineering roles, founding engineer opportunities, and consulting on SaaS, AI, and business automation."
           />
 
-          <div className="mt-10 grid gap-4 sm:grid-cols-3">
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {social.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                target={item.name === "Email" ? undefined : "_blank"}
-                rel={
-                  item.name === "Email" ? undefined : "noopener noreferrer"
-                }
+                target={item.external ? "_blank" : undefined}
+                rel={item.external ? "noopener noreferrer" : undefined}
                 className="group rounded-2xl border border-border/80 bg-surface/50 p-6 transition hover:border-accent/40 hover:bg-surface"
               >
                 <p className="text-sm font-semibold text-accent">

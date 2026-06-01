@@ -1,5 +1,5 @@
 import SectionHeading from "./SectionHeading";
-import { about, focus, interests } from "../data/content";
+import { about, approach, focus, interests } from "../data/content";
 
 export default function About() {
   return (
@@ -28,6 +28,22 @@ export default function About() {
                   <li
                     key={item}
                     className="flex gap-3 text-text-muted before:mt-2.5 before:block before:h-1.5 before:w-1.5 before:shrink-0 before:rounded-full before:bg-accent before:content-['']"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="rounded-2xl border border-border bg-surface-raised/60 p-6 backdrop-blur-sm">
+              <h3 className="mb-4 text-sm font-semibold tracking-wide text-text uppercase">
+                How I work
+              </h3>
+              <ul className="space-y-2.5 text-text-muted">
+                {approach.map((item) => (
+                  <li
+                    key={item}
+                    className="border-l-2 border-accent/40 pl-3 leading-snug"
                   >
                     {item}
                   </li>
