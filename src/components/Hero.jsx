@@ -19,10 +19,6 @@ export default function Hero() {
             className="rise inline-flex items-center gap-2 rounded-full border border-border bg-surface-raised/70 px-3.5 py-1.5 text-[0.78rem] font-medium text-ink-soft backdrop-blur"
             style={{ animationDelay: "60ms" }}
           >
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
-            </span>
             Available for senior roles &amp; consulting
           </p>
           <p
