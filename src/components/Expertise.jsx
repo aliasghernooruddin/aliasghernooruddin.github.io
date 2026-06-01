@@ -10,7 +10,7 @@ export default function Expertise() {
     >
       <div className="mx-auto max-w-5xl">
         <SectionHeading
-          index="02"
+          index="03"
           label="Expertise"
           title="What I work on"
           description="Full-stack product development with a bias toward shipping and scaling."

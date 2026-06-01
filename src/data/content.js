@@ -104,16 +104,128 @@ export const products = [
   },
 ];
 
-export const stack = {
-  backend: ["Node.js", "Express.js", "REST APIs", "Database design"],
-  cloud: ["Railway", "AWS EC2", "API hosting", "SaaS infrastructure"],
-  meta: [
-    "WhatsApp Cloud API",
-    "Meta Business Manager",
-    "Business verification",
-    "System users & tokens",
-  ],
+export const experience = [
+  {
+    role: "Senior Software Engineer II",
+    team: "Backend · Node.js",
+    company: "SWVL",
+    location: "Remote",
+    period: "2023 — Present",
+    context:
+      "SaaS-based mobility and transport platform operating across global markets.",
+    points: [
+      "Designed a secure, role-based authentication framework with Express.js, JWT, and Redis — enabling distributed session management and consistent access control across services.",
+      "Built event-driven microservices on AWS SNS/SQS and REST APIs, reducing inter-service latency by 30%.",
+      "Implemented SSO and standardized JWT validation between Node.js and Python services, improving cross-stack security.",
+      "Optimized PostgreSQL schema design and automated ORM migrations for data consistency in production.",
+      "Streamlined CI/CD with GitHub Actions, cutting deployment time by 40% with zero downtime.",
+      "Mentored junior developers and drove code reviews, design discussions, and architecture planning.",
+    ],
+    stack: [
+      "TypeScript",
+      "Express.js",
+      "Node.js",
+      "AWS Lambda",
+      "SNS / SQS",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "Docker",
+    ],
+  },
+  {
+    role: "Software Engineer",
+    team: "Python · Full-Stack",
+    company: "5cube",
+    location: "Karachi, PK",
+    period: "2021 — 2023",
+    context:
+      "Software firm delivering full-stack SaaS solutions for diverse global clients.",
+    points: [
+      "Led full-stack development across client projects with Django, Flask, FastAPI, and JavaScript (React, Vue, Angular).",
+      "Architected and deployed microservice SaaS platforms on AWS — PostgreSQL, Redis, S3, CloudFront, API Gateway — for multi-tenant, high-availability deployments.",
+      "Implemented real-time features (chat, notifications, auctions) with Socket.io and WebSockets.",
+      "Collaborated on legacy .NET integrations to improve interoperability with Python services.",
+    ],
+    stack: [
+      "Python",
+      "Django",
+      "Flask",
+      "FastAPI",
+      "React",
+      "Vue",
+      "AWS",
+      "Terraform",
+      "GCP",
+    ],
+  },
+  {
+    role: "Junior Full-Stack Developer",
+    team: "Full-Stack",
+    company: "5cube",
+    location: "Karachi, PK",
+    period: "2018 — 2021",
+    context: "Built core backend services and full-stack features across products.",
+    points: [
+      "Built and maintained core backend services in Node.js and Express.js — authentication, payments, and third-party API integrations.",
+      "Developed RESTful APIs and optimized MongoDB and SQL queries through indexing and query tuning.",
+      "Wrote unit and integration tests (Jest) to prevent regressions and ensure stable deployments.",
+      "Supported full-stack delivery with React, Angular, and Vue.js.",
+    ],
+    stack: ["Node.js", "Express.js", "React", "Angular", "Vue", "EC2", "MongoDB"],
+  },
+];
+
+export const education = {
+  degree: "BSc, Computer Science",
+  school: "Hamdard University, Karachi",
+  year: "2019",
 };
+
+export const achievements = [
+  {
+    title: "Rising Star Award",
+    year: "2021",
+    description:
+      "Recognized for outstanding performance and rapid contribution to backend development within the first year.",
+  },
+  {
+    title: "Excellence in Project Delivery",
+    year: "2023",
+    description:
+      "Awarded for leading the on-time completion of a mission-critical Node.js microservices project.",
+  },
+];
+
+export const stack = [
+  {
+    title: "Languages",
+    items: ["JavaScript (ES6+)", "TypeScript", "Python", "C#"],
+  },
+  {
+    title: "Backend & APIs",
+    items: ["Node.js", "Express.js", "Django", "Flask", "FastAPI", "Socket.io"],
+  },
+  {
+    title: "Databases",
+    items: ["PostgreSQL", "MongoDB", "Redis", "DynamoDB", "Firestore"],
+  },
+  {
+    title: "Cloud & DevOps",
+    items: [
+      "AWS (Lambda, S3, SNS, SQS)",
+      "API Gateway · CloudFront",
+      "GCP",
+      "Docker · Kubernetes",
+      "Terraform",
+      "GitHub Actions · CI/CD",
+    ],
+  },
+  {
+    title: "Tools",
+    items: ["Git", "Firebase", "Postman", "Linux", "VS Code"],
+  },
+];
 
 export const interests = [
   "Artificial Intelligence",
@@ -135,7 +247,7 @@ export const focus = [
 
 export const navLinks = [
   { href: "#about", label: "About" },
-  { href: "#expertise", label: "Expertise" },
-  { href: "#products", label: "Products" },
+  { href: "#experience", label: "Experience" },
+  { href: "#products", label: "Work" },
   { href: "#contact", label: "Contact" },
 ];

@@ -7,7 +7,7 @@ export default function Products() {
     <section id="products" className="scroll-mt-24 px-6 py-24 lg:py-32">
       <div className="mx-auto max-w-5xl">
         <SectionHeading
-          index="03"
+          index="04"
           label="Selected work"
           title="Shipped products, not just frameworks"
           description="Real platforms in production — from invoicing SaaS to WhatsApp-powered business messaging."

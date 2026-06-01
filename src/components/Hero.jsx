@@ -4,9 +4,9 @@ import profilePhoto from "../logo.jpeg";
 const headlineWords = site.headline.split(" ");
 
 const stats = [
-  { value: "~7 yrs", label: "Building products" },
-  { value: "2", label: "SaaS shipped" },
-  { value: "Full", label: "Product lifecycle" },
+  { value: "7+ yrs", label: "Engineering experience" },
+  { value: "SWVL", label: "Currently building at" },
+  { value: "2", label: "SaaS products shipped" },
 ];
 
 export default function Hero() {

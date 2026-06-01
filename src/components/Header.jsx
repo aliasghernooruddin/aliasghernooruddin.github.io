@@ -52,13 +52,17 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className={`text-[0.8rem] font-medium tracking-wide transition-colors duration-300 ${
+                aria-current={isActive ? "true" : undefined}
+                className={`inline-flex items-center gap-1.5 text-[0.8rem] font-medium tracking-wide transition-colors duration-300 ${
                   isActive ? "text-ink" : "text-ink-muted hover:text-ink"
                 }`}
               >
-                <span className="text-ink-faint">
-                  {isActive ? "● " : ""}
-                </span>
+                <span
+                  className={`h-1.5 w-1.5 rounded-full transition-all duration-300 ${
+                    isActive ? "scale-100 bg-accent" : "scale-0 bg-transparent"
+                  }`}
+                  aria-hidden="true"
+                />
                 {link.label}
               </a>
             );

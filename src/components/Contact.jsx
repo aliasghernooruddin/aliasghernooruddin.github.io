@@ -1,21 +1,25 @@
+import { useState } from "react";
 import Reveal from "./Reveal";
+import LinksDialog from "./LinksDialog";
 import { site } from "../data/content";
 
-const social = [
+const links = [
   { name: "Email", href: site.links.email, description: site.email, external: false },
-  { name: "Phone", href: site.links.phone, description: site.phone, external: false },
   { name: "LinkedIn", href: site.links.linkedin, description: "Connect professionally", external: true },
-  { name: "GitHub", href: site.links.github, description: "View code & projects", external: true },
-  { name: "Twitter / X", href: site.links.twitter, description: "@aliasghernoor", external: true },
+  { name: "GitHub", href: site.links.github, description: "Code & open-source projects", external: true },
   { name: "Stack Overflow", href: site.links.stackoverflow, description: "Answers & contributions", external: true },
+  { name: "Twitter / X", href: site.links.twitter, description: "@aliasghernoor", external: true },
+  { name: "Phone", href: site.links.phone, description: site.phone, external: false },
 ];
 
 export default function Contact() {
+  const [dialogOpen, setDialogOpen] = useState(false);
+
   return (
     <section id="contact" className="scroll-mt-24 px-6 py-24 lg:py-36">
       <div className="mx-auto max-w-5xl">
         <Reveal className="mb-5 flex items-center gap-3">
-          <span className="font-serif text-sm italic text-accent">05</span>
+          <span className="font-serif text-sm italic text-accent">06</span>
           <span className="h-px w-8 bg-border-strong" />
           <span className="text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-ink-muted">
             Contact
@@ -43,45 +47,34 @@ export default function Contact() {
           consulting on SaaS, AI, and business automation.
         </Reveal>
 
-        <Reveal delay={200}>
-          <a
-            href={site.links.email}
-            className="group mt-9 inline-flex items-center gap-2.5 rounded-full bg-ink px-7 py-4 text-base font-semibold text-surface transition-all duration-300 hover:gap-4 hover:bg-accent"
-          >
-            Send an email
-            <span className="transition-transform duration-300 group-hover:translate-x-1">
-              →
-            </span>
-          </a>
-        </Reveal>
-
-        <div className="mt-16 grid gap-px overflow-hidden rounded-3xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
-          {social.map((item, i) => (
-            <Reveal
-              key={item.name}
-              delay={i * 60}
-              className="bg-surface-raised/80"
+        <Reveal delay={220}>
+          <div className="mt-9 flex flex-wrap items-center gap-4">
+            <a
+              href={site.links.email}
+              className="group inline-flex items-center gap-2.5 rounded-full bg-ink px-7 py-4 text-base font-semibold text-surface transition-all duration-300 hover:gap-4 hover:bg-accent"
             >
-              <a
-                href={item.href}
-                target={item.external ? "_blank" : undefined}
-                rel={item.external ? "noopener noreferrer" : undefined}
-                className="group flex h-full flex-col justify-between gap-6 p-6 transition-colors duration-300 hover:bg-surface-raised"
-              >
-                <div className="flex items-center justify-between">
-                  <p className="text-sm font-semibold text-ink">{item.name}</p>
-                  <span className="text-ink-faint transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-accent">
-                    ↗
-                  </span>
-                </div>
-                <p className="text-sm text-ink-muted transition-colors group-hover:text-ink-soft">
-                  {item.description}
-                </p>
-              </a>
-            </Reveal>
-          ))}
-        </div>
+              Send an email
+              <span className="transition-transform duration-300 group-hover:translate-x-1">
+                →
+              </span>
+            </a>
+            <button
+              type="button"
+              onClick={() => setDialogOpen(true)}
+              className="inline-flex items-center gap-2 rounded-full border border-ink/15 bg-surface-raised px-7 py-4 text-base font-semibold text-ink transition-all duration-300 hover:border-ink"
+            >
+              Find me online
+              <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+        </Reveal>
       </div>
+
+      <LinksDialog
+        open={dialogOpen}
+        onClose={() => setDialogOpen(false)}
+        links={links}
+      />
     </section>
   );
 }

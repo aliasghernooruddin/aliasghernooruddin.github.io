@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Experience from "./components/Experience";
 import Expertise from "./components/Expertise";
 import Products from "./components/Products";
 import Stack from "./components/Stack";
@@ -33,6 +34,7 @@ export default function App() {
       <main>
         <Hero />
         <About />
+        <Experience />
         <Expertise />
         <Products />
         <Stack />

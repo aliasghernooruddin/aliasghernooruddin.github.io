@@ -2,52 +2,56 @@ import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 import { stack } from "../data/content";
 
-const groups = [
-  { key: "backend", title: "Backend & APIs", items: stack.backend },
-  { key: "cloud", title: "Cloud & infrastructure", items: stack.cloud },
-  { key: "meta", title: "Meta & messaging", items: stack.meta },
+const marqueeItems = [
+  "Node.js",
+  "TypeScript",
+  "Python",
+  "AWS",
+  "PostgreSQL",
+  "Redis",
+  "Docker",
+  "Kubernetes",
+  "Express.js",
+  "FastAPI",
+  "GraphQL",
+  "Terraform",
 ];
-
-const marqueeItems = [...stack.backend, ...stack.cloud, ...stack.meta];
 
 export default function Stack() {
   return (
     <section className="scroll-mt-24 border-t border-border bg-surface-muted/40 px-6 py-24 lg:py-32">
       <div className="mx-auto max-w-5xl">
         <SectionHeading
-          index="04"
+          index="05"
           label="Toolkit"
           title="Technologies & platforms"
-          description="The stack behind the products — chosen for reliability and speed to market."
+          description="The stack behind seven years of production systems — chosen for reliability and speed to market."
         />
 
-        <div className="grid gap-px overflow-hidden rounded-3xl border border-border bg-border md:grid-cols-3">
-          {groups.map((group, index) => (
-            <Reveal
-              key={group.key}
-              delay={index * 90}
-              className="bg-surface-raised/80 p-7 transition-colors duration-500 hover:bg-surface-raised"
-            >
-              <h3 className="flex items-center gap-2 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-ink-muted">
-                <span className="font-serif text-sm italic text-accent">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                {group.title}
-              </h3>
-              <ul className="mt-5 space-y-3">
-                {group.items.map((item) => (
-                  <li
-                    key={item}
-                    className="group flex items-center gap-3 text-ink-soft"
-                  >
-                    <span className="h-px w-3 bg-border-strong transition-all duration-300 group-hover:w-5 group-hover:bg-accent" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+        <dl className="border-t border-border">
+          {stack.map((group, index) => (
+            <Reveal key={group.title} delay={index * 60}>
+              <div className="grid items-baseline gap-3 border-b border-border py-6 sm:grid-cols-[210px_1fr] sm:gap-8">
+                <dt className="flex items-center gap-2 font-display text-base font-semibold text-ink">
+                  <span className="font-serif text-sm italic text-accent">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  {group.title}
+                </dt>
+                <dd className="flex flex-wrap gap-2">
+                  {group.items.map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-border bg-surface-raised px-3 py-1.5 text-[0.82rem] text-ink-soft transition-all duration-300 hover:border-accent-line hover:text-accent"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </dd>
+              </div>
             </Reveal>
           ))}
-        </div>
+        </dl>
       </div>
 
       {/* Marquee */}
